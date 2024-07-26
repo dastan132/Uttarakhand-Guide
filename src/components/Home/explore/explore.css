@@ -1,0 +1,34 @@
+.explore {
+  display: flex;
+  flex-direction: row;
+}
+
+.explore-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-right: 5rem;
+}
+
+.explore-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container_row {
+  flex: 1 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem 5rem;
+}
