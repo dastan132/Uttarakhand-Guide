@@ -19,7 +19,6 @@
     }
 
     .card {
-
       backface-visibility: hidden;
       position: absolute;
       top: 0;
@@ -29,26 +28,24 @@
 
       &.front {
         transform: rotateY(0);
-
         border-radius: 8px;
-        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        box-shadow: 4px 4px 6px rgb(0 0 0 / 50%);
       }
 
       &.back {
         padding-top: 8px;
         font-family: var(--font-family);
         transform: rotateY(180deg);
-
-        background: rgb(146, 123, 123);
+        background: rgb(146 123 123);
         background: linear-gradient(
           90deg,
-          rgba(146, 123, 123, 1) 0%,
-          rgba(250, 249, 246, 1) 35%,
-          rgba(255, 255, 255, 1) 100%
+          rgb(146 123 123 / 100%) 0%,
+          rgb(250 249 246 / 100%) 35%,
+          rgb(255 255 255 / 100%) 100%
         );
-        color: rgb(111, 95, 77);
+        color: rgb(111 95 77);
         border-radius: 8px;
-        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        box-shadow: 4px 4px 6px rgb(0 0 0 / 50%);
         font-weight: 600;
         font-size: 20px;
         text-align: center;

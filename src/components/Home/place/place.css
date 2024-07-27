@@ -6,7 +6,6 @@
 .hotel-heading {
   width: 100%;
   text-align: left;
-
   margin-bottom: 5rem;
 }
 
@@ -29,19 +28,19 @@
   margin-right: 2rem;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .hotel-container_groupA:hover {
   transform: translateY(-20px);
 }
 
 .hotel-container_groupB {
   flex: 1;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (width <= 990px) {
   .hotel-container {
     flex-direction: column-reverse;
   }
@@ -59,7 +58,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (width <= 700px) {
   .hotel-container_groupB {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -74,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (width <= 550px) {
   .hotel-heading h1 {
     font-size: 34px;
     line-height: 42px;
@@ -83,6 +82,7 @@
 
 .about_places {
   font-size: 16px;
+
   /* line-height: 75px; */
   font-family: var(--font-family);
   font-weight: 800;

@@ -6,7 +6,6 @@
 .hotel-heading {
   width: 100%;
   text-align: left;
-
   margin-bottom: 5rem;
 }
 
@@ -29,13 +28,12 @@
 
 .hotel-container_groupB {
   flex: 1;
-
   display: grid;
   grid-template-columns: auto;
   grid-gap: 2rem;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (width <= 990px) {
   .hotel-container {
     flex-direction: column-reverse;
   }
@@ -43,7 +41,8 @@
   .hotel-container_groupA {
     margin: 2rem 0;
   }
-  */ .hotel-container_groupA .hotel-container_article {
+
+  * .hotel-container_groupA .hotel-container_article {
     width: 48%;
   }
 
@@ -52,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (width <= 700px) {
   .hotel-container_groupB {
     grid-template-columns: auto;
   }
@@ -67,7 +66,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (width <= 550px) {
   .hotel-heading h1 {
     font-size: 34px;
     line-height: 42px;

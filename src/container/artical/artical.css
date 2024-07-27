@@ -1,7 +1,6 @@
 .hotel-container_article {
   width: 100%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   background: var(--color-footer);
@@ -18,7 +17,7 @@
   height: 250px;
   background-size: cover;
   cursor: pointer;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 6px rgb(0 0 0 / 50%);
   border-radius: 5px;
 }
 
@@ -26,7 +25,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   padding: 1rem 1.5rem;
   height: 100%;
   cursor: pointer;
@@ -37,7 +35,6 @@
   font-size: 11.65px;
   font-weight: 700;
   line-height: 35px;
-
   color: #252222;
 }
 
@@ -46,7 +43,6 @@
   font-size: 25.11px;
   font-weight: 800;
   line-height: 30.3px;
-
   color: #252222;
   margin-bottom: 5rem;
   cursor: pointer;
@@ -56,12 +52,13 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (width <= 550px) {
   .hotel-container_article-content h3 {
     font-size: 18px;
     line-height: 25p;
   }
 }
+
 /*
 .toggle_more{
   mix-blend-mode: color-burn;

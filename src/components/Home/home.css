@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-
   margin-right: 5rem;
 }
 
@@ -27,14 +26,12 @@
   font-size: 20px;
   line-height: 28px;
   color: var(--color-text);
-
   margin-top: 1.5rem;
 }
 
 .header-content__input {
   width: 100%;
   margin: 2rem 0 1rem;
-
   display: flex;
   flex-direction: row;
 }
@@ -52,7 +49,6 @@
   padding: 0 1rem;
   outline: none;
   color: #fff;
-
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -71,7 +67,6 @@
   color: #fff;
   cursor: pointer;
   outline: none;
-
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -82,7 +77,6 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-
   margin-top: 2rem;
 }
 
@@ -106,7 +100,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(10px 7px 10px rgb(216, 215, 215));
+  filter: drop-shadow(10px 7px 10px rgb(216 215 215));
 }
 
 .header-image img {
@@ -114,7 +108,7 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (width <= 1050px) {
   .header {
       flex-direction: column;
   }
@@ -124,7 +118,7 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (width <= 650px) {
   .header-content h1 {
       font-size: 48px;
       line-height: 60px;
@@ -150,7 +144,7 @@
   }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (width <= 490px) {
   .header-content h1 {
       font-size: 36px;
       line-height: 48px;

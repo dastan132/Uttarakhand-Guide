@@ -8,6 +8,7 @@
 body {
   background-color: var(--color-bg);
 }
+
 a {
   color: #252222;
   text-decoration: none;
@@ -15,19 +16,19 @@ a {
 }
 
 .gradient__bg {
-  background: rgb(146, 123, 123);
+  background: rgb(146 123 123);
   background: linear-gradient(
     90deg,
-    rgba(146, 123, 123, 1) 0%,
-    rgba(250, 249, 246, 1) 35%,
-    rgba(255, 255, 255, 1) 100%
+    rgb(146 123 123 / 100%) 0%,
+    rgb(250 249 246 / 100%) 35%,
+    rgb(255 255 255 / 100%) 100%
   );
 }
 
 .gradient__text {
   background: var(--gradient-text);
   background-clip: text;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -40,45 +41,50 @@ a {
 }
 
 .scale-up-center {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
     both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-@-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
 @keyframes scale-up-center {
   0% {
-    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
     transform: scale(0.5);
   }
+
   100% {
-    -webkit-transform: scale(1);
+    transform: scale(1);
     transform: scale(1);
   }
 }
 
-@media screen and (max-width: 700px) {
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (width <= 700px) {
   .section__margin {
     margin: 4rem;
   }
+
   .section__padding {
     padding: 4rem;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (width <= 550px) {
   .section__margin {
     margin: 4rem 2rem;
   }
+
   .section__padding {
     padding: 4rem 2rem;
   }
