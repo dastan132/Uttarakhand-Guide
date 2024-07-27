@@ -28,6 +28,7 @@ function Flipper({ card }) {
                   height: '300px',
                   borderRadius: '8px',
                 }}
+                alt='#'
               />
             </p>
           </div>

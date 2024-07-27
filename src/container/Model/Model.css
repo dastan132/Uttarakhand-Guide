@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
 }
 
 .popup_img {
-  /* float: left; */
+
   width: 400px;
   height: 250px;
   background-size: cover;
